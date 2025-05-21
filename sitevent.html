@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brosse Soufflante Chauffante Pro | Coiffure Facile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7f9fc;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      padding: 20px 40px;
+      color: white;
+      font-weight: 700;
+      font-size: 1.8rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgb(255 126 95 / 0.5);
+      position: relative;
+    }
+    .cart-btn {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      cursor: pointer;
+      font-size: 1.6rem;
+      background: transparent;
+      border: none;
+      color: white;
+    }
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+    main img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .product-info h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: #ff5e3a;
+    }
+    .product-info p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #444;
+    }
+    .price {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #ff5e3a;
+      margin-bottom: 30px;
+    }
+    .buy-button {
+      background-color: #ff5e3a;
+      color: white;
+      padding: 18px 40px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 6px 12px rgba(255,94,58,0.6);
+    }
+    .buy-button:hover {
+      background-color: #ff3a00;
+      box-shadow: 0 8px 20px rgba(255,58,0,0.8);
+    }
+    .delivery-info {
+      margin-top: 25px;
+      font-size: 0.95rem;
+      color: #777;
+    }
+    section.reviews {
+      max-width: 900px;
+      margin: 60px auto 40px;
+      padding: 0 20px;
+    }
+    section.reviews h2 {
+      font-size: 2rem;
+      color: #ff5e3a;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .review {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      padding: 25px 30px;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #333;
+      position: relative;
+    }
+    .review::before {
+      content: "“";
+      font-size: 3rem;
+      color: #ff5e3a;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+    }
+    .reviewer {
+      margin-top: 15px;
+      font-weight: 700;
+      font-style: normal;
+      color: #555;
+      text-align: right;
+    }
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .product-info h1 {
+        font-size: 2rem;
+      }
+      .price {
+        font-size: 2rem;
+      }
+      .buy-button {
+        width: 100%;
+        padding: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Brosse Soufflante Chauffante Pro
+    <button class="cart-btn snipcart-checkout" aria-label="Voir le panier">🛒 (<span class="snipcart-items-count"></span>)</button>
+  </header>
+
+  <main>
+    <img src="brosse.png" alt="Brosse Soufflante Chauffante Pro" />
+    <div class="product-info">
+      <h1>Brosse Soufflante Chauffante Pro</h1>
+      <p>Découvrez la brosse soufflante qui révolutionne votre coiffure ! En quelques minutes, séchez, coiffez et donnez du volume à vos cheveux sans effort.</p>
+      <p>Technologie avancée chauffante, matériaux de qualité et design ergonomique pour un résultat professionnel à la maison.</p>
+      <div class="price">60 €</div>
+      <button
+        class="buy-button snipcart-add-item"
+        data-item-id="brosse-soufflante-pro"
+        data-item-name="Brosse Soufflante Chauffante Pro"
+        data-item-price="60.00"
+        data-item-url="."
+        data-item-description="Brosse soufflante chauffante avec contrôle de température et résultats rapides."
+        data-item-image="brosse.png"
+      >
+        Ajouter au panier
+      </button>
+      <div class="delivery-info">🚚 Livraison gratuite sous 3-7 jours ouvrés en France métropolitaine. Suivi complet inclus.</div>
+    </div>
+  </main>
+
+  <section class="reviews">
+    <h2>Avis clients</h2>
+    <div class="review">
+      “Incroyable ! Je l’utilise tous les jours, mes cheveux n’ont jamais été aussi beaux et faciles à coiffer.” 
+      <div class="reviewer">– Clara D.</div>
+    </div>
+    <div class="review">
+      “Je ne regrette pas mon achat, la brosse chauffe vite et sèche parfaitement sans abîmer mes cheveux.” 
+      <div class="reviewer">– Ahmed M.</div>
+    </div>
+    <div class="review">
+      “Parfaite pour les matins pressés, je gagne beaucoup de temps et j’adore le volume que ça donne !” 
+      <div class="reviewer">– Sophie L.</div>
+    </div>
+    <div class="review">
+      “Super qualité, design élégant et très simple à utiliser. Je recommande vivement.” 
+      <div class="reviewer">– Julien T.</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Brosse Soufflante Chauffante Pro – Livraison rapide et satisfait ou remboursé.
+  </footer>
+ <script>
+    window.SnipcartSettings = {
+        publicApiKey: 'MzZiYzY1YmMtNmE4Yi00NTZkLWIyMjAtMDY2NTM5Y2I0ZDdlNjM4ODM0NTc4Nzg1NjEzNzU3',
+        loadStrategy: 'on-user-interaction',
+    };
+
+    (()=>{var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),v(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),m.forEach(g=>document.removeEventListener(g,o))}function v(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+</script  </div>
+</body>
+</html>
